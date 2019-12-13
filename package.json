@@ -14,7 +14,7 @@
     "watch:sass": "node-sass -w src/public/stylesheets/main.scss dist/public/stylesheets/main.css",
     "clean": "node scripts/clean.js",
     "test": "jest --forceExit --coverage --verbose",
-    "dev": "yarn build:static & yarn build:sass && concurrently -k -p \"[{name}]\" -n \"Sass,Typescript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"yarn watch:sass\" \"yarn build:ts\" \"yarn start:dev\""
+    "dev": "yarn build:static && yarn build:sass && concurrently -k -p \"[{name}]\" -n \"Sass,Typescript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"yarn watch:sass\" \"yarn watch:ts\" \"yarn start:dev\""
   },
   "dependencies": {
     "@types/dotenv": "^8.2.0",
