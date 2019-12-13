@@ -6,7 +6,7 @@
 
 require('dotenv').config();
 var app = require('../app');
-var debug = require('debug')('quickpress:server');
+var debug = require('debug')('texpress:server');
 var http = require('http');
 
 /**
