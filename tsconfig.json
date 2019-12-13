@@ -24,7 +24,8 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "exclude": [
-    "test/**"
+    "test/**",
+    "scripts/**"
   ],
   "typeAcquisition": {
     "include": [

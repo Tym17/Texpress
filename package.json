@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "init:env": "node scripts/createEnv.js",
+    "tex:env": "node scripts/createEnv.js",
+    "tex:controller": "node scripts/createController.js",
     "build": "yarn build:static && yarn build:sass && yarn build:ts",
     "start": "node dist/bin/www.js",
     "start:dev": "nodemon dist/bin/www.js",
@@ -36,8 +37,10 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
+    "chalk": "^3.0.0",
     "concurrently": "^5.0.1",
     "jest": "^24.9.0",
+    "minimist": "^1.2.0",
     "nodemon": "^2.0.2",
     "ts-jest": "^24.2.0",
     "ts-node": "^8.5.4"
