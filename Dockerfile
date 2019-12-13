@@ -5,7 +5,7 @@ COPY yarn.lock .
 COPY tsconfig.json .
 COPY .env .
 COPY ./src ./src
-COPY ./scripts ./scripts
+COPY ./scripts/copyStaticAssets.js ./scripts/copyStaticAssets.js
 
 RUN yarn install --production
 RUN yarn build
